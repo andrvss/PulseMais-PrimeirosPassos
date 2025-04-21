@@ -1,0 +1,34 @@
+// Programa para calcular o valor da conta a pagar com base no código e quantidade de um item
+
+algoritmo "ValorConta"
+    // Declaração das variáveis
+    inteiro codigo
+    inteiro quantidade
+    real total
+
+inicio
+    // Leitura do código do item e da quantidade
+    escreva("Digite o código do item: ")
+    leia(codigo)
+    escreva("Digite a quantidade: ")
+    leia(quantidade)
+
+    // Cálculo do total com base no código
+    se (codigo = 1) então
+        total := quantidade * 4.00
+    senao se (codigo = 2) então
+        total := quantidade * 4.50
+    senao se (codigo = 3) então
+        total := quantidade * 5.00
+    senao se (codigo = 4) então
+        total := quantidade * 2.00
+    senao se (codigo = 5) então
+        total := quantidade * 1.50
+    senao
+        escreva("Código inválido")
+        pare // Encerra o programa se o código for inválido
+    fimse
+
+    // Impressão do resultado
+    escreva("Total: R$ ", total:0:2)
+fimalgoritmo

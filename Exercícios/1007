@@ -1,0 +1,24 @@
+// Programa para calcular a diferença do produto de A e B pelo produto de C e D
+
+algoritmo "DiferencaProduto"
+    // Declaração das variáveis
+    inteiro A, B, C, D
+    inteiro DIFERENCA
+
+inicio
+    // Leitura dos valores inteiros A, B, C e D
+    escreva("Digite o valor de A: ")
+    leia(A)
+    escreva("Digite o valor de B: ")
+    leia(B)
+    escreva("Digite o valor de C: ")
+    leia(C)
+    escreva("Digite o valor de D: ")
+    leia(D)
+
+    // Cálculo da diferença
+    DIFERENCA := (A * B) - (C * D)
+
+    // Impressão do resultado
+    escreva("DIFERENCA = ", DIFERENCA)
+fimalgoritmo

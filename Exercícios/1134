@@ -1,0 +1,39 @@
+// Programa para determinar a preferência de combustíveis em um posto
+
+algoritmo "PreferenciaCombustivel"
+    // Declaração das variáveis
+    inteiro codigo
+    inteiro alcool, gasolina, diesel
+
+inicio
+    // Inicialização das contagens
+    alcool := 0
+    gasolina := 0
+    diesel := 0
+
+    // Loop para ler os códigos de combustível
+    enquanto verdadeiro faça
+        escreva("Digite o código do combustível (1-Álcool, 2-Gasolina, 3-Diesel, 4-Fim): ")
+        leia(codigo)
+
+        // Verificação do código
+        se (codigo = 1) então
+            alcool := alcool + 1
+        senao se (codigo = 2) então
+            gasolina := gasolina + 1
+        senao se (codigo = 3) então
+            diesel := diesel + 1
+        senao se (codigo = 4) então
+            // Encerra o loop se o código for 4
+            pare
+        senao
+            escreva("Código inválido. Tente novamente.")
+        fimse
+    fimenquanto
+
+    // Impressão do resultado
+    escreva("MUITO OBRIGADO")
+    escreva("Alcool: ", alcool)
+    escreva("Gasolina: ", gasolina)
+    escreva("Diesel: ", diesel)
+fimalgoritmo

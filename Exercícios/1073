@@ -1,0 +1,24 @@
+// Programa para calcular e apresentar o quadrado dos valores pares de 1 até N
+
+algoritmo "QuadradoPares"
+    // Declaração da variável
+    inteiro N
+    inteiro i
+
+inicio
+    // Leitura do valor inteiro N
+    escreva("Digite um valor inteiro N (5 < N < 2000): ")
+    leia(N)
+
+    // Verificação se N está dentro do intervalo permitido
+    se (N <= 5) ou (N >= 2000) então
+        escreva("Valor de N fora do intervalo permitido.")
+    senao
+        // Loop para calcular e imprimir o quadrado dos números pares
+        para i de 1 até N passo 1 faça
+            se (i % 2 = 0) então // Verifica se i é par
+                escreva(i, "^2 = ", i * i)
+            fimse
+        fimpara
+    fimse
+fimalgoritmo

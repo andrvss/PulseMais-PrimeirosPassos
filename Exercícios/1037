@@ -1,0 +1,24 @@
+// Programa para verificar em qual intervalo um valor real se encontra
+
+algoritmo "IntervaloValor"
+    // Declaração da variável
+    real valor
+
+inicio
+    // Leitura do valor real
+    escreva("Digite um valor real: ")
+    leia(valor)
+
+    // Verificação do intervalo
+    se (valor >= 0) e (valor <= 25) então
+        escreva("Intervalo [0,25]")
+    senao se (valor > 25) e (valor <= 50) então
+        escreva("Intervalo (25,50]")
+    senao se (valor > 50) e (valor <= 75) então
+        escreva("Intervalo (50,75]")
+    senao se (valor > 75) e (valor <= 100) então
+        escreva("Intervalo (75,100]")
+    senao
+        escreva("Fora de intervalo")
+    fimse
+fimalgoritmo

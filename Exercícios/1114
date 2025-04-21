@@ -1,0 +1,21 @@
+// Programa para validar uma senha até que a correta seja informada
+
+algoritmo "ValidaSenha"
+    // Declaração da variável
+    inteiro senha
+
+inicio
+    // Loop para repetir a leitura da senha
+    enquanto verdadeiro faça
+        escreva("Digite a senha: ")
+        leia(senha)
+
+        // Verificação da senha
+        se (senha = 2002) então
+            escreva("Acesso Permitido")
+            pare // Encerra o programa
+        senao
+            escreva("Senha Invalida")
+        fimse
+    fimenquanto
+fimalgoritmo
